@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* flnt for word Shape  */
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+  }
+  .ephesis-regular {
+    font-family: "Ephesis", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 8rem;
+  }
+  
+/* shared style  */
+
+  *{
+    margin: 0;
+  }
+  body{
+    background-color: black;
+  }
+  .btn-primary{
+    border-radius: 3rem;
+    background: rgb(230, 83, 60);
+    padding: 1rem 2rem 1rem 2rem;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+  }
+ 
+  /* header style  start */
+  .my-header{
+    background-image: linear-gradient(180.00deg, #111111,#777777 100%);
+    padding: 3.5rem 9rem 0 9rem;
+ }
+  /* nav style  */
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav > ul{
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
+    padding: 10px 15px;
+  }
+  nav li{
+    list-style: none;
+  }
+  nav > ul > li > a{
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: white;
+  }
+  .nav-title{
+    color: #E6533C;
+    font-size: 36px;
+    font-weight: 800;
+  }
+  .home{
+    border-radius: 46px;
+    background: rgb(230, 83, 60);
+    padding: 8px 20px 8px 20px;
+  }
+  #menu-bar{
+    display: none;
+  }
+
+  /* hero style  */
+  .hero{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .hero-title{
+    color: rgb(255, 255, 255);
+    font-size: 4.75rem;
+    font-weight: 900;
+  }
+  .hero-subtitle{
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    font-weight: 400;
+    margin: 25px auto;
+  }
+  .hero-info-container{
+    max-width: 540px;
+  }
+  .hero-image-container{
+    position: relative;
+  }
+  .btn-download{
+    border-radius: 3rem;
+    padding: 1rem 2rem;
+    border: 1px solid rgb(255, 255, 255);
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: black;
+  }
+  .hero-btns{
+    display: flex;
+    gap: 16px;
+  }
+  .circle-div{
+    width: 40px;
+    height: 40px;
+    background-color: #E6533C;
+    border-radius: 50%;
+    border: none;
+  }
+  .tutorial-div{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
+    width: 206px;
+    height: 96px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: -64px;
+    bottom: 100px;
+  }
+  .workout-div{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
+    padding: 30px 40px;
+    position: absolute;
+    text-align: center;
+    right: -60px;
+    bottom: 350px;
+  }
+  .tutorial-number{
+    color: rgb(250, 250, 249);
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 10px;
+  }
+  .tutorial{
+    color: rgba(239, 237, 232, 0.65);
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .workout-number{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: 900;
+  }
+  .workout{
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 10px;
+  }
+                  /* header end  */
+
+  /* main part start  */
+  
+  /* mediia quary for phone */
+  @media screen and (max-width: 576px) {
+    *{
+      font-size: 6px;
+    }
+    .hero{
+      flex-direction: column;
+    }
+    #menu-bar{
+      display: block;
+      color: white;
+    }
+    .font-sizee{
+      font-size: 30px;
+    }
+    .nav-menu{
+      display: none;
+    }
+    .tutorial-div{
+      left: 20px;
+    }
+    .workout-div{
+      right: 10px;
+      bottom: 200px;
+    }
+
+    /* main par start  */
+    
+  }
+
+  @media screen and (max-width: 992px) and (min-width: 576px) {
+    *{
+      font-size: 12px;
+    }
+    .hero{
+      flex-direction: column;
+    }
+  }
