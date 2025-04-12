@@ -33,6 +33,26 @@
     font-weight: 600;
     color: white;
   }
+  .margin-top{
+    margin-top: 20px;
+  }
+  .margin-bottom{
+    margin-bottom: 20px;
+  }
+  .section-title{
+    font-size: 3rem;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 1rem;
+  }
+  .section-subtitle{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .text-center{
+    text-align: center;
+  }
  
   /* header style  start */
   .my-header{
@@ -170,6 +190,135 @@
 
   /* main part start  */
   
+  /* habit section  */
+  .habits{
+    max-width: 1044px;
+    margin: 100px auto;
+  }
+  .habit{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .habits-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    gap: 2.5rem;
+  }
+  .habit  img{
+    border-radius: 50%;
+    margin-bottom: 25px;
+  }
+  .habit-title{
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .habit-subtitle{
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+  }
+
+    /* run extra section  */
+
+    .run-extra-container{
+      max-width: 1040px;
+      margin: 100px auto;
+      display: flex;
+      gap: 165px;
+      align-items: center;
+      padding: 40px;
+      background-color:  rgb(34, 34, 34);
+      border-radius: 20px;
+    }
+    .run-img > img{
+      width: 100%;
+      border-radius: 18px;
+    }
+  
+
+    /* Trainings and Exercises section  */
+    .training-imags{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .training-imags img{
+      width: 100%;
+    }
+    .training-continer{
+      max-width: 1040px;
+      margin: 100px auto;
+    }
+    .training-imags{
+      margin-top: 50px;
+    }
+    .training-img1{
+      background-image:  linear-gradient(rgba(6, 255, 210, 0.5), rgba(6, 255, 210, 0.5)),
+      url('../images/exercise1.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 150px;
+      padding: 20px;
+    }
+    .training-img2{
+      background-image:  linear-gradient(rgba(255, 0, 0, 0.3), rgba(255, 0, 0, 0.3)),
+      url('../images/exercise2.png');
+      background-size: cover;
+      background-position: center;
+      height: 150px;
+      padding: 20px;
+      color: white;
+      column-span: 2;
+      grid-column: span 2;
+    }
+    .training-img3{
+      background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('../images/exercise3.png');
+      background-size: cover;
+      background-position: center;
+      height: 150px;
+      padding: 20px;
+      color: white;
+      text-align: end;
+    }
+    .training-img4{
+      background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('../images/exercise4.png');
+      background-size: contain;
+      background-position: center;
+      height: 150px;
+      padding: 20px;
+      grid-column: span 2;
+      color: white;
+      text-align: right;
+    }
+    .training-img5{
+      background-image:  linear-gradient(rgba(66, 255, 0, 0.3), rgba(66, 255, 0, 0.3)),
+      url('../images/exercise5.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 150px;
+      padding: 20px;
+      color: white;
+    }
+    .training-img6{
+      background-image:  linear-gradient(rgba(0, 71, 255, 0.3), rgba(0, 71, 255, 0.3)),
+      url('../images/exercise6.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 150px;
+      padding: 20px;
+      color: white;
+    }
+
+
+
+
   /* mediia quary for phone */
   @media screen and (max-width: 576px) {
     *{
@@ -197,7 +346,28 @@
     }
 
     /* main par start  */
-    
+
+    /* habit section  */
+    .habits-container{
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .habits,
+     .run-extra-container,
+     .training-continer{
+      margin: 30px auto;
+    }
+    /* run section  */
+    .run-extra-container{
+      flex-direction: column;
+      gap: 20px;
+    }
+    /* training part  */
+    .training-imags{
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .training-img2, .training-img4{
+      grid-column: span 1;
+    }
   }
 
   @media screen and (max-width: 992px) and (min-width: 576px) {
@@ -206,5 +376,11 @@
     }
     .hero{
       flex-direction: column;
+    }
+    .habits-container{
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .habits{
+      margin: 50px auto;
     }
   }
