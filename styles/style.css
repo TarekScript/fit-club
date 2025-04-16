@@ -316,8 +316,143 @@
       color: white;
     }
 
+    /* Emi calculatior section  */
+    .bmi-container{
+      color: white;
+    }
+    .bmi-box{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 11rem;
+      margin:  5.5rem 0;
+      padding: 4rem 12rem;
+      background-color: rgb(34, 34, 34);;
+    }
+    .bmi-calculator{
+      grid-column: span 2;
+    }
+    .bmi-title{
+      font-size: 26px;
+    }
+    .flex-display{
+      display: flex;
+      gap: 30px;
+    }
+    .flex-one{
+      flex: 1;
+    }
+    .styled-input {
+      margin-top: 10px;
+      padding: 12px 16px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      background-color: rgba(255, 255, 255, 0.1);
+    }
 
+    /* bmi chart  */
+    table{
+      border-collapse: collapse;
+      margin-top: 50px;
+    }
+    td, th{
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 14px 18px;
+      font-size: 14px;
+    }
 
+    .our-team-section{
+      max-width: 1040px;
+      margin: auto;
+      padding: 20px;
+    }
+    .team-infos{
+      margin: 50px auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .member-name{
+      color: white;
+      font-weight: 700;
+      font-size: 20px;
+    }
+    .team-desg{
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 14px;
+    }
+    .team-box{
+      height: 300px;
+      padding: 20px;
+      border-radius: 18px;
+    }
+
+    .member-one{
+      background-image: url("../images/trainer1.png");
+      background-size: cover;
+    }
+    .member-two{
+      background-image: url("../images/trainer2.png");
+      background-size: cover;
+    }
+    .member-three{
+      background-image: url("../images/trainer3.png");
+      background-size: cover;
+    }
+    .member-four{
+      background-image: url("../images/trainer4.png");
+      background-size: cover;
+    }
+    .member-five{
+      background-image: url("../images/trainer5.png");
+      background-size: cover;
+    }
+    .member-six{
+      background-image: url("../images/trainer6.png");
+      background-size: cover;
+    }
+
+    /* footer  */
+
+    footer{
+      max-width: 1040px;
+      margin: 3rem auto;
+    }
+    .footer-info-container{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      justify-content: space-between;
+      gap: 70px;
+      margin-bottom: 30px;
+      padding: 30px;
+    }
+    .footer-title{
+      color: rgb(230, 83, 60);
+      font-size: 4.5rem;
+      font-weight: 800;
+    }
+    .footer-name{
+      grid-column: span 2;
+    }
+    .footer-item-title{
+      color: rgb(255, 255, 255);
+      font-size: 25px;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+    .footer-item-subtitle{
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 20px;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+    .copy-right{
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 20px;
+      font-weight: 400;
+      text-align: center;
+      margin-top: 30px;
+    }
 
   /* mediia quary for phone */
   @media screen and (max-width: 576px) {
@@ -345,7 +480,7 @@
       bottom: 200px;
     }
 
-    /* main par start  */
+      /* main par start  */
 
     /* habit section  */
     .habits-container{
@@ -365,11 +500,21 @@
     .training-imags{
       grid-template-columns: repeat(2, 1fr);
     }
-    .training-img2, .training-img4{
+    .training-img2, .training-img4, .footer-name{
       grid-column: span 1;
     }
-  }
 
+    /* emi calculator  */
+    .bmi-box,
+    .team-infos,
+    .footer-info-container{
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .flex-display{
+      flex-direction: column;
+    }
+  }
+                  /* responsibe for tablet  */
   @media screen and (max-width: 992px) and (min-width: 576px) {
     *{
       font-size: 12px;
@@ -382,5 +527,12 @@
     }
     .habits{
       margin: 50px auto;
+    }
+    /* emi calculator  */
+    .bmi-box{
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .footer-info-container{
+      grid-template-columns: repeat(2, 1fr);
     }
   }
